@@ -126,20 +126,26 @@
 <!-- PORTFOLIO -->
 <section id="portfolio" class="light-bg" aria-label="Portfolio Gallery">
     <h2 class="center">Our Portfolio</h2>
-    <div class="carousel-container" role="region" aria-label="Project Gallery">
-        <div class="carousel">
-            <div class="carousel-track">
-                <img src="Source Images/1.jpeg" alt="Exhibition project 1" loading="lazy">
-                <img src="Source Images/2.jpeg" alt="Exhibition project 2" loading="lazy">
-                <img src="Source Images/3.jpeg" alt="Exhibition project 3" loading="lazy">
-                <img src="Source Images/1.png" alt="Exhibition project 4" loading="lazy">
-                <img src="Source Images/2.png" alt="Exhibition project 5" loading="lazy">
-                <img src="Source Images/8.jpg" alt="Exhibition project 6" loading="lazy">
-                <img src="Source Images/7.jpg" alt="Exhibition project 7" loading="lazy">
-            </div>
+
+    <div class="marquee">
+        <div class="marquee-track">
+            <img src="Source Images/1.jpeg" alt="Exhibition project 1">
+            <img src="Source Images/2.jpeg" alt="Exhibition project 2">
+            <img src="Source Images/3.jpeg" alt="Exhibition project 3">
+            <img src="Source Images/1.png" alt="Exhibition project 4">
+            <img src="Source Images/2.png" alt="Exhibition project 5">
+            <img src="Source Images/8.jpg" alt="Exhibition project 6">
+            <img src="Source Images/7.jpg" alt="Exhibition project 7">
+
+            <!-- duplicate for seamless loop -->
+            <img src="Source Images/1.jpeg">
+            <img src="Source Images/2.jpeg">
+            <img src="Source Images/3.jpeg">
+            <img src="Source Images/1.png">
+            <img src="Source Images/2.png">
+            <img src="Source Images/8.jpg">
+            <img src="Source Images/7.jpg">
         </div>
-        <button class="carousel-btn prev" onclick="slideCarousel(-1)" aria-label="Previous project">&#10094;</button>
-        <button class="carousel-btn next" onclick="slideCarousel(1)" aria-label="Next project">&#10095;</button>
     </div>
 </section>
 
@@ -309,3 +315,4 @@ function slideCarousel(direction) {
 
 </body>
 </html>
+
